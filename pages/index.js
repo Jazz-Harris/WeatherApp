@@ -52,7 +52,7 @@ export default function Home() {
         />
 
         {/* Search */}
-        <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-5 px-2  text-white z-10'>
+        <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-5 px-2 lg:mt-20 text-white z-10'>
           <form
             onSubmit={fetchWeather}
             className='flex justify-between items-center w-full m-auto  p-3 bg-transparent border border-white border-2  text-white rounded-2xl'
