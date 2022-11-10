@@ -24,7 +24,7 @@ const Weather = ({ data }) => {
               {data.weather[0].description}
             </p>
           </div>
-          <p className="text-8xl md:text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
+          <p className="text-8xl md:text-9xl pt-6">{data.main.temp.toFixed(0)}&#176;</p>
         </div>
 
         <div className="flex col-span-2 justify-between text-center px-5 pt-5">
