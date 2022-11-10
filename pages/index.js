@@ -43,7 +43,7 @@ export default function Home() {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         {/* Overlay */}
-        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]' />
+        <div className='absolute top-0 left-0 right-0 bottom-0 z-[1] height: 100vh' />
         {/* Background image */}
         <Image
         src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" 
@@ -52,7 +52,7 @@ export default function Home() {
         />
 
         {/* Search */}
-        <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-5 px-2 lg:mt-20 text-white z-10'>
+        <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-20 px-2 lg:mt-10 text-white z-10'>
           <form
             onSubmit={fetchWeather}
             className='flex justify-between items-center w-full m-auto  p-3 bg-transparent border border-white border-2  text-white rounded-2xl'
