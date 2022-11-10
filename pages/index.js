@@ -12,6 +12,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState(null);
 
+
+
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
   const fetchWeather = (e) => {
@@ -72,22 +74,7 @@ export default function Home() {
               <BsSearch size={22} />
             </button>
           </form>
-          <div className=" z-10 absolute pt-40 w-full p-2 font-bold m-auto text-white text-center">
-            <div className="pt-10">
-            <button onClick={fetchWeather}  className=" bg-transparent border border-white border-2  hover:bg-black text-white font-bold py-2 px-4 m-1 rounded-full">
-              Portland
-            </button>
-            <button onClick={fetchWeather} className=" bg-transparent border border-white border-2  hover:bg-black text-white font-bold py-2 px-4 m-2 rounded-full">
-              Paris
-            </button>
-            <button onClick={fetchWeather} className=" bg-transparent border border-white border-2 hover:bg-black text-white font-bold py-2 px-4 m-2 rounded-full">
-              Dubai
-            </button>
-            <button onClick={fetchWeather}  className=" bg-transparent border border-white border-2  hover:bg-black text-white font-bold py-2 px-4 m-2 rounded-full">
-            Tokyo
-            </button>
-          </div>
-          </div>
+         
         </div>
 
         {weather.main && <Weather data={weather} />}
