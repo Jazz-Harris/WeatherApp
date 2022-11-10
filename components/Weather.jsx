@@ -4,7 +4,7 @@ import React from "react";
 const Weather = ({ data }) => {
   console.log(data);
   return (
-    <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[50vh] m-auto  pt-5 text-white z-10 ">
+    <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[50vh] m-auto  pt-5 mb-5 text-white z-10 ">
       <div>
         <p className="text-3xl text-center  font-bold pt-5">
           Weather in {data.name}, {data.sys.country}
@@ -12,7 +12,7 @@ const Weather = ({ data }) => {
         <p className="text-2xl text-center ">
           Local time zone: {data.timezone}
         </p>
-        <div className="relative flex justify-between pt-8 ">
+        <div className="relative flex justify-between px-5 pt-8 ">
           <div className="flex flex-col items-center  ">
             <Image
               src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
@@ -27,7 +27,7 @@ const Weather = ({ data }) => {
           <p className="text-8xl md:text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
         </div>
 
-        <div className="flex col-span-2 justify-between text-center pt-5">
+        <div className="flex col-span-2 justify-between text-center px-5 pt-5">
           <div className="bg-black/50 relative p-2  rounded-md   px-2 mt-2 pt-2 ">
             <p className="font-bold text-2xl">
               {data.main.temp.toFixed(0)}&#176;
@@ -54,7 +54,7 @@ const Weather = ({ data }) => {
           </div>
         </div>
 
-        <div className="flex col-span-2 justify-between text-center pt-6 ">
+        <div className="flex col-span-2 justify-between text-center px-5 pt-6 ">
           <div className="bg-black/50 relative p-2  rounded-md   mt-2 pt-2 ">
             <p className="font-bold text-2xl">{data.main.humidity}%</p>
             <p className="md:text-xl">Humidity</p>
