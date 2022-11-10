@@ -45,7 +45,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="absolute top-0 left-0 right-0 bottom-0 z-[1]  w-full h-[90vh]" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 z-[1]  w-full h-[100vh]" />
 
         <Image
           src="https://images.unsplash.com/photo-1658302640218-f6ea33f8effa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -81,4 +81,5 @@ export default function Home() {
       </div>
     );
   }
+  
 }

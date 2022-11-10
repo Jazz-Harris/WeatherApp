@@ -4,7 +4,7 @@ import React from "react";
 const Weather = ({ data }) => {
   console.log(data);
   return (
-    <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[50vh] m-auto  pt-10 p-2 text-white z-10 ">
+    <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[50vh] m-auto  pt-5 text-white z-10 ">
       <div>
         <p className="text-3xl text-center  font-bold pt-5">
           Weather in {data.name}, {data.sys.country}
@@ -27,7 +27,7 @@ const Weather = ({ data }) => {
           <p className="text-8xl md:text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
         </div>
 
-        <div className="flex col-span-2 justify-between text-center pt-10">
+        <div className="flex col-span-2 justify-between text-center pt-5">
           <div className="bg-black/50 relative p-2  rounded-md   px-2 mt-2 pt-2 ">
             <p className="font-bold text-2xl">
               {data.main.temp.toFixed(0)}&#176;
