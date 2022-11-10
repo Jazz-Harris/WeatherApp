@@ -6,13 +6,13 @@ const Weather = ({ data }) => {
   return (
     <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[50vh] m-auto  pt-5 mb-5 text-white z-10 ">
       <div>
-        <p className="text-3xl text-center  font-bold pt-5">
+        <p className="text-3xl text-center  font-bold pt-2">
           Weather in {data.name}, {data.sys.country}
         </p>
         <p className="text-2xl text-center ">
           Local time zone: {data.timezone}
         </p>
-        <div className="relative flex justify-between px-5 pt-8 ">
+        <div className="relative flex justify-between px-5 pt-4 ">
           <div className="flex flex-col items-center  ">
             <Image
               src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
