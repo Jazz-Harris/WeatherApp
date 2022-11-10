@@ -55,7 +55,7 @@ export default function Home() {
           GET THE LOCAL WEATHER FOR ANY CITY
         </div>
 
-        <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-20 px-2 lg:mt-10 text-white z-10">
+        <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-16 px-2 lg:mt-10 text-white z-10">
           <form
             onSubmit={fetchWeather}
             className="flex justify-between items-center w-full m-auto  p-3 bg-transparent border border-white border-4  text-white rounded-2xl"
